@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Shovon's Portfolio website</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/water-gun.png" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <main id="main-content-area">
+
+        <header id="header" class="clearfix"> <!-- header area start -->
+            <div class="left-content header-top">
+                <h1>Welcome To</h1>
+                <h1> 
+                    <span class="mark-text">Peter Parker</span> World 
+                </h1>
+                <h3>Build Climber and Train Stopper</h3>
+                <p> 
+                    You might saw me jumping, climbing buildings, and stopping trains. But nobody pays me a dime for that work. That's why I am learning and mastering web development. I will not stop until I become the Web Development Hero.
+                </p>
+                <a class="btn" href="https://www.facebook.com/profile.php?id=100029361443681" target="_blank">Hire Me</a>
+            </div> <!--/. finish header left content -->
+            <div class="right-content">
+                <img src="images/preview.gif" alt="photo">
+            </div> <!--/. finish header right content -->
+        </header> <!--/. header area finish -->
+
+
+
+
+
+        <section id="dream-project" class="clearfix"> <!-- Dream area start -->
+            <div class="left-content"> 
+                <img src="images/headline.gif" alt="photo">
+            </div> <!--/. finish dream leaf content -->
+            <div class="right-content right-top"> 
+                <h2>Dream Big</h2>
+                <p>
+                    I already learned the basic HTML and CSS. I can build any simple website. I can even teach my grandma how to make simple website. My goal is to build 3 websites and learn advanced topics.
+                </p>
+                <a href="https://www.facebook.com/profile.php?id=100029361443681" target="_blank" class="btn">Download Resume</a>
+            </div> <!--/. finish dream right content -->
+        </section> <!--/. Dream area finish -->
+
+
+
+
+        <section id="experience-area" class="clearfix"> <!-- Experience area start -->
+            <h2>Experience</h2>
+            <div class="left-content box-shadow left-border">
+                <h1>Full Stack Web Developer</h1>
+                <h3> 
+                    <span class="mark-text">
+                        2021-Present | Pro Level Developer
+                    </span>
+                </h3>
+                <p>
+                    I am the master of HTML, CSS and Javascript. I know everything needed to make a website function, efficient. I didn't stop with the web. I went beyond with most popular Javascript framework called Vue JS. I even know the deployment, server and security. I will give you 100% web solution.
+                </p>
+            </div> <!--/. finish experience left content -->
+            <div class="right-content box-shadow right-border">
+                <h1>Baby Web Developer</h1>
+                <h3> 
+                    <span class="mark-text">
+                        2020-2021 | Programming Hero Learner
+                    </span>
+                </h3>
+                <p>
+                    They didn't offer me a job. But I made myself as a remove web developer. I made their website and showed it to them. They liked it. And uploaded the content. It was fun working at Programming Hero.
+                </p>
+            </div> <!--/. finish experience right content -->
+        </section> <!--/. Experience area finish -->
+
+
+
+        <footer id="footer">
+            <p>© Peter Parker 2021, a Programming Hero initiative.</p>
+        </footer>
+
+        <div class="iframe">
+            <iframe src="https://www.prothomalo.com" frameborder="0"></iframe>
+            <iframe src="https://www.prothomalo.com" frameborder="0"></iframe>
+            <iframe src="https://www.prothomalo.com" frameborder="0"></iframe>
+        </div>
+
+    </main>
+
+
+    <section id="loader"> 
+        <img src="images/IMG_20190416_211139-removebg-preview-removebg-preview.png" alt="loader">
+    </section>
+
+    
+
+
+
+
+
+    <!--Js code-->
+    <script>
+
+        let content = document.querySelector("#main-content-area");
+        let loader = document.querySelector("#loader");
+
+        content.style.display = "none";
+
+        window.onload = function() {
+            content.style.display="block";
+            loader.style.display="none";
+        }
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+/* Default css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Crimson Text', serif;
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --orange-color: #FFAE19;
+    --white-color: #fff;
+    --black-color: #000;
+    --btn-color: #FF6E50;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* Repeat css */
+
+h1 {
+    font-size: 50px;
+    margin: 50px 0px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-spacing: 9px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.left-content {
+    width: 40%;
+    margin-left: 5%;
+}
+
+.right-content {
+    width: 40%;
+    margin-left: 8%;
+}
+
+.left-content,
+.right-content {
+    float: left;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 48px;
+    background: linear-gradient(76deg, #ff9079d6, #FF6E50);
+    border-radius: 4px;
+    margin-top: 10px;
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.box-shadow {
+    height: 370px;
+    padding: 0px 30px;
+    box-shadow: 4px 9px 20px grey;
+    overflow-y: auto;
+}
+
+.box-shadow h1 {
+    font-size: 37px;
+    margin-bottom: 30px;
+}
+
+/* Header css */
+
+#header {
+    background-image: url('../images/top-banner.png');
+    background-repeat: no-repeat;
+}
+
+.mark-text {
+    color: var(--orange-color);
+}
+
+.header-top {
+    margin-top: -15px;
+}
+
+/* Dream css */
+
+#dream-project {
+    background-image: url("../images/dream-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.right-top {
+    margin-top: 100px;
+}
+
+/* Exeperience css */
+
+#experience-area {
+    margin: 50px 0px;
+    background-image: url('../images/exp-bg.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#experience-area h2 {
+    margin-bottom: 50px;
+}
+
+.box-shadow p {
+    line-height: 25px;
+}
+
+.left-border {
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, #FF9B76, #FF694C);
+    border-image-slice: 1;
+}
+
+.right-border {
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, #000CFF, #00E8FF);
+    border-image-slice: 1;
+}
+
+/* Footer css */
+
+#footer {
+    margin-top: 100px;
+}
+
+#footer p {
+    text-align: center;
+    letter-spacing: 0px;
+    font-size: 20px;
+}
+.iframe {
+    display: none;
+}
+
+/* Loader css  */
+
+#loader {
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* Responsive css */
+
+@media screen and (max-width: 1400px) and (min-width: 992px) {
+
+    h1 {
+        font-size: 45px;
+    }
+    #header .left-content h1:first-child {
+        margin-top: 100px;
+    }
+    #header .left-content h1:nth-child(2) {
+        margin-top: -40px;
+    }
+    #dream-project {
+        margin: 100px 0px;
+    }
+    .box-shadow {
+        padding: 0px 13px;
+    }
+    .box-shadow h1 {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+    .box-shadow h3 {
+        font-size: 20px;
+    }
+    .box-shadow p {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 576px) {
+
+    #header h1:first-child {
+        margin-top: 21%;
+    }
+
+    #header h1:nth-child(2) {
+        margin-top: -5%;
+    }
+
+    .left-content,
+    .right-content {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    #header .right-content img {
+        margin: 20% 0;
+    }
+
+    #dream-project .left-content img {
+        margin-bottom: 20%;
+    }
+    .box-shadow {
+        margin-bottom: 5%;
+    }
+    .box-shadow:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 32px;
+        margin-bottom: 6px;
+    }
+    h3 {
+        font-size: 17px;
+    }
+    p {
+        font-size: 11px;
+        word-spacing: 6px;
+        line-height: 23px;
+        margin-bottom: 3px;
+    }
+    .btn {
+        padding: 4px 26px;
+    }
+    #header h1:first-child {
+        margin-top: 31%;
+    }
+
+    #header h1:nth-child(2) {
+        margin-top: -10%;
+    }
+    #header h3 {
+        margin-top: -20px;
+    }
+    .left-content,
+    .right-content {
+        width: 90%;
+        margin: 0 5%;
+    }
+    #header .right-content img {
+        margin: 20% 0;
+    }
+
+    #dream-project .left-content img {
+        margin-bottom: 10%;
+    }
+    .box-shadow {
+        height: 300px;
+        padding: 0px 14px;
+        margin-bottom: 10%;
+    }
+    .box-shadow:last-child {
+        margin-bottom: 0;
+    }
+    .box-shadow h1 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .box-shadow h3 {
+        font-size: 10px;
+    }
+    .box-shadow p {
+        line-height: 17px;
+    }
+    #experience-area h2 {
+        margin-bottom: 30px;
+        margin-left: 15px;
+    }
+    #footer p {
+        font-size: 16px;
+        margin-top: -15%;
+    }
+    
+}
